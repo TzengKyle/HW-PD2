@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="982.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerStory">
+   <children>
+      <Rectangle fx:id="recWhiteCommunicate" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="536.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="982.0">
+         <effect>
+            <InnerShadow choke="0.63" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Rectangle>
+      <Text fx:id="textOfTalk" fill="#31bc59" layoutX="105.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="782.1246490478516">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font>
+      </Text>
+      <Pane fx:id="paneOfYourName" layoutX="302.0" layoutY="402.0" prefHeight="111.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="TFOfYourName" layoutX="119.0" layoutY="30.0" onMouseEntered="#hideErrorSign" promptText="4~10 letter" style="-fx-background-color: white; -fx-border-width: 6;">
+               <effect>
+                  <DropShadow height="99.64" radius="45.8575" spread="0.36" width="85.79" />
+               </effect></TextField>
+            <Text fx:id="textOfYNSign" fill="#31bc59" layoutX="12.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name:" wrappingWidth="106.12486267089844">
+               <font>
+                  <Font name="Consolas Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="textOfErrorSign" fill="RED" layoutX="286.0" layoutY="46.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="invalid name" wrappingWidth="78.92462158203125" />
+            <Button layoutX="168.0" layoutY="69.0" mnemonicParsing="false" onAction="#submit" text="SUBMIT">
+               <effect>
+                  <Reflection />
+               </effect></Button>
+         </children>
+      </Pane>
+      <Pane fx:id="paneOfNext" layoutX="36.0" layoutY="471.0" prefHeight="42.0" prefWidth="106.0">
+         <children>
+            <Text fill="#31bc59" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEXT▶" wrappingWidth="86.92478942871094">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#next" onMouseClicked="#click" onMouseEntered="#hello" opacity="0.0" prefHeight="23.0" prefWidth="69.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneOfRightWindow" layoutX="542.0" prefHeight="536.0" prefWidth="440.0">
+         <children>
+            <Rectangle fx:id="recRightWindow" arcHeight="5.0" arcWidth="5.0" height="536.0" layoutX="11.0" stroke="BLACK" strokeType="INSIDE" width="418.0">
+               <effect>
+                  <MotionBlur radius="63.0" />
+               </effect>
+            </Rectangle>
+            <Pane fx:id="paneOfJigsaw" layoutX="20.0" layoutY="161.0" prefHeight="369.0" prefWidth="400.0">
+               <children>
+                  <ImageView fitHeight="347.0" fitWidth="326.0" layoutX="14.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@科技感各式文字框1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one1" fitHeight="100.0" fitWidth="79.0" layoutX="49.0" layoutY="69.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one2" fitHeight="100.0" fitWidth="79.0" layoutX="128.0" layoutY="69.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one3" fitHeight="100.0" fitWidth="79.0" layoutX="207.0" layoutY="69.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one4Transparent" fitHeight="100.0" fitWidth="79.0" layoutX="49.0" layoutY="148.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one5" fitHeight="100.0" fitWidth="79.0" layoutX="128.0" layoutY="148.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one6" fitHeight="100.0" fitWidth="79.0" layoutX="207.0" layoutY="148.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-6.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one7" fitHeight="100.0" fitWidth="79.0" layoutX="49.0" layoutY="227.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-7.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one8" fitHeight="100.0" fitWidth="79.0" layoutX="128.0" layoutY="227.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-8.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="one9" fitHeight="100.0" fitWidth="79.0" layoutX="207.0" layoutY="227.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@拼圖1-9.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="49.0" layoutY="78.0" mnemonicParsing="false" onAction="#buttonOfPosOne" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="128.0" layoutY="78.0" mnemonicParsing="false" onAction="#buttonOfPosTwo" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="207.0" layoutY="78.0" mnemonicParsing="false" onAction="#buttonOfPosThree" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="48.0" layoutY="157.0" mnemonicParsing="false" onAction="#buttonOfPosFour" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="128.0" layoutY="157.0" mnemonicParsing="false" onAction="#buttonOfPosFive" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="207.0" layoutY="157.0" mnemonicParsing="false" onAction="#buttonOfPosSix" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="48.0" layoutY="233.0" mnemonicParsing="false" onAction="#buttonOfPosSeven" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="128.0" layoutY="233.0" mnemonicParsing="false" onAction="#buttonOfPosEight" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Button layoutX="207.0" layoutY="233.0" mnemonicParsing="false" onAction="#buttonOfPosNine" onMouseClicked="#click" opacity="0.0" prefHeight="67.0" prefWidth="79.0" text="Button" />
+                  <Text fx:id="textOfFinish" fill="#31bc59" layoutX="141.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish!!" wrappingWidth="106.0">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneOfSkip" layoutX="862.0" layoutY="471.0" prefHeight="42.0" prefWidth="106.0">
+         <children>
+            <Text fill="#31bc59" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SKIP▶" wrappingWidth="86.92478942871094">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="skip" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#skipTalk1" onMouseClicked="#click" onMouseEntered="#hello" opacity="0.0" prefHeight="23.0" prefWidth="69.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneOfNextTest" layoutX="411.0" layoutY="373.0" prefHeight="42.0" prefWidth="133.0">
+         <children>
+            <Text fill="#31bc59" layoutX="8.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEXTTEST▶" wrappingWidth="134.9248504638672">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="17.0" layoutY="9.0" mnemonicParsing="false" onAction="#nextTestFunc" onMouseClicked="#click" onMouseEntered="#hello" opacity="0.0" prefHeight="23.0" prefWidth="99.0" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

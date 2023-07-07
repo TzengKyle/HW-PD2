@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="982.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerShot">
+   <children>
+      <Pane fx:id="paneOfBK" layoutX="80.0" layoutY="14.0" onMouseClicked="#gunSF" onMouseExited="#starFunc2" onMouseMoved="#starFunc" prefHeight="437.0" prefWidth="807.0">
+         <children>
+            <ImageView fitHeight="451.0" fitWidth="957.0" layoutX="3.0" onMouseClicked="#funcOfBK" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@外星球場警.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow choke="0.53" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="IvOfTargetR1" fitHeight="52.0" fitWidth="59.0" layoutX="183.0" layoutY="235.0" onMouseClicked="#funcOfR1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@方形標靶.jpg" />
+               </image>
+            </ImageView>
+            <Pane fx:id="paneOfStar" layoutX="341.0" layoutY="171.0" prefHeight="110.0" prefWidth="126.0">
+               <children>
+                  <Circle fill="#00000040" layoutX="63.0" layoutY="55.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" />
+                  <Circle fill="#ff212153" layoutX="63.0" layoutY="55.0" radius="5.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneOfPoint" layoutX="615.0" layoutY="470.0" prefHeight="52.0" prefWidth="346.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff6b" height="52.0" layoutX="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" width="346.0" />
+            <Text fx:id="textOfCounter" fill="#33b44b" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remain Target : " wrappingWidth="179.60015869140625">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="textOfMistake" fill="#33b44b" layoutX="195.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mistake : " wrappingWidth="107.60015869140625">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fx:id="ready" fill="#4bff00" layoutX="80.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ARE YOU READY" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Text>
+      <Pane fx:id="paneOfNextTest" layoutX="424.0" layoutY="475.0" prefHeight="42.0" prefWidth="133.0">
+         <children>
+            <Text fill="#31bc59" layoutX="8.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEXTTEST▶" wrappingWidth="134.9248504638672">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="17.0" layoutY="9.0" mnemonicParsing="false" onAction="#nextTestFunc" opacity="0.0" prefHeight="23.0" prefWidth="99.0" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#ButOfStart:hover {
+    
+    -fx-scale-y: 1.3;
+    -fx-scale-x: 1.1;
+}
+
+#ButOfQuit:hover {
+    
+    -fx-scale-y: 1.3;
+    -fx-scale-x: 1.1;
+}
+
+#ButOfYes:hover {
+    
+    -fx-scale-y: 1.3;
+    -fx-scale-x: 1.1;
+}
+
+#ButOfNo:hover {
+    
+    -fx-scale-y: 1.3;
+    -fx-scale-x: 1.1;
+}
+
+#newGame1:hover {
+    
+    -fx-scale-y: 0.8;
+    -fx-scale-x: 0.9;
+}
+#newGame2:hover {
+    
+    -fx-scale-y: 0.8;
+    -fx-scale-x: 0.9;
+}
+
+#cancel:hover {
+    
+    -fx-scale-y: 0.8;
+    -fx-scale-x: 0.9;
+}
